@@ -12,10 +12,13 @@
 a = int(input())
 b = list(input())
 print(b)
-for i in range(1,a,2):
-    b.pop(i)
-
-x = 0
 for i in range(0,a):
-    x += int(b[i])
-print(x)
+    if b[i] == " ":
+        b.pop(i)
+        
+
+print(b)
+# x = 0
+# for i in range(0,a):
+#     x += int(b[i])
+# print(x)
