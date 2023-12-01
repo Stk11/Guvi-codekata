@@ -10,15 +10,10 @@
 
 
 a = int(input())
-b = list(input())
-print(b)
-for i in range(0,a):
-    if b[i] == " ":
-        b.pop(i)
-        
-
-print(b)
-# x = 0
-# for i in range(0,a):
-#     x += int(b[i])
-# print(x)
+b = list(map(int,input().split()))
+# print(b)
+# b = list(filter(lambda x: x != " ", b))
+x =0
+for i in b:
+        x |= i
+print(x) 
